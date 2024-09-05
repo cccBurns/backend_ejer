@@ -1,10 +1,10 @@
-# Solicitud HTTP get
+# Solicitud HTTP get / Enviar una solicitud get al servidor / PEDIR
 
 import requests
 
 url="https://jsonplaceholder.typicode.com/posts"
 
-r = requests.get(url)
+r = requests.get(url, timeout=5)
 
 data = r.json()
 
